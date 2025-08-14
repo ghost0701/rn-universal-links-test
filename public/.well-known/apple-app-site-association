@@ -1,0 +1,13 @@
+{
+  "appLinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "XZKD242UDM.com.asmanoky.interpreting",
+        "paths": [
+          "/calls/*"
+        ]
+      }
+    ]
+  }
+}
