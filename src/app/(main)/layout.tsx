@@ -1,9 +1,9 @@
 'use client';
 
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { PropsWithChildren, useEffect } from 'react';
 
-export default function DeepLinkPage() {
+const MainLayout = ({ children }: PropsWithChildren) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -30,5 +30,7 @@ export default function DeepLinkPage() {
     return () => clearTimeout(fallbackTimer);
   }, [pathname, searchParams]);
 
-  return <p>Opening app…</p>;
-}
+  return children;
+};
+
+export default MainLayout;
