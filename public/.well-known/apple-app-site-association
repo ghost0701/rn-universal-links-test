@@ -4,8 +4,11 @@
     "details": [
       {
         "appID": "V79RA492N6.com.asmanoky.interpreting1",
-        "paths": [
-          "/calls/*"
+        "components": [
+          {
+            "/": "/*",
+            "comment": "Matches any URL with a path that starts with /"
+          }
         ]
       }
     ]
